@@ -21,7 +21,7 @@ prev.addEventListener("click",previm);
 //loads the previous image 
 function previm(){
     i--;
-    if(i==0)
+    if(i<0)
     {i=imgs.length-1;}
     let img=document.getElementById('image');
     img.style.opacity=0;
@@ -33,7 +33,7 @@ function previm(){
 //loads the next image 
 function nextim(){
 i++;
-if(i==imgs.length-1)
+if(i>(imgs.length-1))
 {i=0;}
 let img=document.getElementById('image');
 img.style.opacity=0;
