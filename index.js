@@ -5,7 +5,7 @@ var imgs=[];
 var string;
 var i;
 //punimo slike sa linkovima
-for(var i=1;i<=8;i++){
+for(var i=1;i<=12;i++){
 string="fullscreen/";
 string=string.concat(i);
 string=string.concat(".jpg");
@@ -40,6 +40,7 @@ img.style.opacity=0;
 setTimeout(function(){img.setAttribute('src',imgs[i]); },1500);
 setTimeout(function(){img.style.opacity=1; },1500);
 }
-
+//autoloader
+setInterval(nextim,5500);
 
 
