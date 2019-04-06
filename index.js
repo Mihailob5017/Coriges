@@ -5,7 +5,7 @@ var imgs=[];
 var string;
 var i;
 //punimo slike sa linkovima
-for(var i=1;i<=12;i++){
+for(var i=1;i<=21;i++){
 string="fullscreen/";
 string=string.concat(i);
 string=string.concat(".jpg");
