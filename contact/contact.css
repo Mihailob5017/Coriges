@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../background.jpg');
+    
+}
+/*main dropdown menu about the corgies */
+#dropdown{
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    width: 16.5%;
+    left: 10px;
+    top: 20px;
+    background-color:darkgrey;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+ 
+    
+}
+#dropdown #text{
+    height: 50px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    background-color: lightseagreen;
+}
+#dropdown:hover #dropdown_content{
+    display: inherit;
+}
+#dropdown_content{
+  display: none;
+ 
+}
+#dropdown_content a{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    
+    height: 50px;
+}
+#dropdown_content a:hover{
+    background-color: lightseagreen;
+ 
+}
+#frame{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 55%;
+    background-color:rgba(255, 255, 255, 0.7);
+    height: 95%;
+}
+#personal{
+    position: relative;
+    top: 5px;
+    left: 10px;
+    right: 10px;
+    height: 250px;
+    border-bottom:1.5px solid black;
+  
+}
+#personal #image{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background:url('profile.jpg');
+    background-size: cover;
+}
+#personal #text{
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    right: 10px;
+    height: 200px;
+    font-size: 30px;
+}
+#site{
+    position: relative;
+    top: 20px;
+    height: 400px;
+    left: 10px;
+    width: 97%;
+    border-bottom:1.5px solid black;
+}
+#site span{
+    padding-right: 50%;
+    font-size: 30px;
+    color: firebrick;
+
+}
+#site p{
+    
+    font-size: 25px;
+    display: inline;
+}
+#site .teh{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+#contact p{
+    font-size: 30px;
+    padding: 20px;
+}
+#contact button{
+    position: absolute;
+    width: 250px;
+    height: 55px;
+    cursor: pointer;
+    bottom:10%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 3%;
+    font-size: 20px;
+    box-shadow: 3px 3px 5px black;
+    
+}
+button:hover{
+    color: firebrick;
+    background-color: rgba(0, 0, 0, 0.7);
+}
