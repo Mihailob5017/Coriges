@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url('background.jpg');
-    
+    font-size: 100%;
 }
 
 
@@ -32,7 +32,7 @@ width: auto;
 
 }
 #logo h1{
-font-size: 60px;
+font-size: 4vw;
 padding: 0;
 margin: 0;
 font-family: 'Courier New', Courier, monospace;
@@ -44,7 +44,7 @@ font-style: italic;
 
 /*main dropdown menu about the corgies */
 #dropdown{
-    font-size: 35px;
+    font-size: 3vw;
     color: white;
     position: absolute;
     width: 16.5%;
@@ -95,13 +95,12 @@ font-style: italic;
 #img_container{
 box-shadow: 3px 3px 5px black;
 position: absolute;
-top: 200px;
+top: 110px;
 left: 50%;
-width: 65%;
-
+width: 60%;
 transform: translate(-50%);
 background-color: rgba(109, 111, 112, 0.5);
-height: 650px;
+height: 35vw;
 }
 #left{
     display: flex;
@@ -131,7 +130,7 @@ height: 650px;
     text-align: center;
     color: white;
     font-weight: 1000;
-    font-size: 200px;
+    font-size: 10vw;
     opacity: 0;
     cursor: pointer;
     z-index: 2;
@@ -140,7 +139,7 @@ height: 650px;
     text-align: center;
     color: white;
     font-weight: 1000;
-    font-size: 200px;
+    font-size: 10vw;
     opacity: 0;
     cursor: pointer;
     z-index: 2;
@@ -172,6 +171,198 @@ height: 650px;
     width: 97.32%;
     height: 40px;
     padding-left: 50px;
-    font-size: 25px;
+    font-size:25px;
     cursor: pointer;
+}
+
+
+
+@media screen and (max-width:900px){
+            /*main logo about the corgies */
+#logo{
+   position: relative;
+    
+    margin-top: 5px;
+    width: 100%;
+    box-shadow: 2px 5px 5px black;
+    text-align: center;
+    background-color: white;
+}
+#logo img{
+position: absolute;
+left: 0;
+top: 0;
+height: 97%;
+width: auto;
+}
+#logo h1{
+font-size: 10vmax;
+padding: 0;
+margin: 0;
+font-family: 'Courier New', Courier, monospace;
+font-style: italic;
+}
+#dropdown{
+    left:-9px;
+    font-size: 3vw;
+    color: white;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 2px;
+    background-color:darkgrey;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px black;
+   
+    
+}
+#dropdown #text{
+   
+    border-right: 1px solid black;
+    position: absolute;
+    width: 20%;
+    font-size: 3vmax;
+    background-color:darkgrey;
+    height: 50px;
+    left: 0;
+    display: block;
+    text-align: center;
+    align-items: center;
+   
+}
+#dropdown #text:hover{
+    background-color: lightseagreen;
+}
+
+#dropdown_content{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: inherit;
+    position: absolute;
+    background-color: darkgrey;
+    width: 100%;
+    left: 20%;
+    height: 50px;
+ 
+}
+#dropdown_content a{
+   
+    border-right: 1px solid black;
+    width: 20%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 3vmax;
+    height: 50px;
+}
+#dropdown_content a:hover{
+    background-color: lightseagreen;
+ 
+}
+
+
+
+/*the main image container */
+#img_container{
+    box-shadow: 3px 3px 5px black;
+    position: relative;
+    top: 60px;
+    width: 100%;
+    background-color: rgba(109, 111, 112, 0.5);
+    height: 60vh;
+    }
+    #left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 15%;
+        margin: 0px 5px;
+        transition: 1s;
+    }
+    #right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 15%;
+        margin: 0px 5px;
+        transition: 1s;
+    }
+    #right p{
+        text-align: center;
+        color: white;
+        font-weight: 1000;
+        font-size: 10vmax;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+        
+    }
+    #left p{
+        text-align: center;
+        color: white;
+        font-weight: 1000;
+        font-size: 10vmax;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 2;
+        
+    
+    }
+    
+    #left:hover p{
+        opacity: 1;
+    }
+    #right:hover p{
+        opacity: 1;
+    }
+    #image{
+        
+        position: relative;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-50%);
+        opacity: 1;
+        transition: 1.5s;
+    }
+    
+    
+    #footer{
+        background-color: rgba(255,255,255, 0.5);
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 30px;
+        padding-left: 5px;
+        font-size: 4vh;
+        cursor: pointer;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
