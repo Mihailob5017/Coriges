@@ -37,7 +37,7 @@ font-style: italic;
 
 /*main dropdown menu about the corgies */
 #dropdown{
-  font-size: 3vw;
+  font-size: 2rem;
   color: white;
   position: absolute;
   width: 16.5%;
@@ -71,7 +71,7 @@ display: none;
   text-decoration: none;
   display: block;
   text-align: center;
-  
+  font-size: 3vh;
   height: 50px;
 }
 #dropdown_content a:hover{
@@ -117,7 +117,7 @@ display: none;
   position: relative;
   text-shadow: 2px 2px 2px black;
   text-align: center;
-  left: 30%;
+  left: 10%;
   font-size:  5vmax;
   color: white;
   top: -65%;

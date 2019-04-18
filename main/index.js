@@ -6,7 +6,7 @@ var string;
 var i;
 //punimo slike sa linkovima
 for(var i=1;i<=21;i++){
-string="fullscreen/";
+string="../fullscreen/";
 string=string.concat(i);
 string=string.concat(".jpg");
 imgs[i-1]=string;
@@ -27,6 +27,7 @@ function previm(){
     img.style.opacity=0;
     setTimeout(function(){img.setAttribute('src',imgs[i]); },1500);
     setTimeout(function(){img.style.opacity=1; },1500);
+
     }
 
 
@@ -39,6 +40,7 @@ let img=document.getElementById('image');
 img.style.opacity=0;
 setTimeout(function(){img.setAttribute('src',imgs[i]); },1500);
 setTimeout(function(){img.style.opacity=1; },1500);
+
 }
 //autoloader
 setInterval(nextim,5500);
