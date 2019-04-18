@@ -139,6 +139,18 @@ button:hover{
 
 
 @media screen and (max-width:900px){
+    #frame{
+        position: absolute;
+        margin-top: 20%;
+       
+        transform: translate(-50%);
+        width: 100%;
+        background-color:rgba(255, 255, 255, 0.7);
+        height: 95%;
+    }
+
+
+
 
     #dropdown{
         left:-9px;
