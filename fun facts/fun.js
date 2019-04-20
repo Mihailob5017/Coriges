@@ -1,3 +1,4 @@
+//a list of all the facts 
 var facts=[
 'Beloved in England, Corgis have been part of the British Royal Family for over 70 years. Queen Elizabeth II has owned more than 30 Corgis since she was a young child',
 'Don’t get confused by their stocky build! Corgis are one of the most athletic breeds, as they were originally herders. They’ve been known to be shockingly fast runners. ',
@@ -21,28 +22,28 @@ var facts=[
 
 
 function pokreni(link,num){
-//clearing out if there is more than one instance of this 
+//if there is a div already created,this is going to make sure it is removed before we add another one 
 if(document.getElementById("main")!=undefined){
     document.getElementById("main").remove();
 }
 
-
 //declarations
 num=num-1;
-var mainimg=document.createElement("div");
-var image=document.createElement("img");
-var span=document.createElement("span");
-var text=document.createElement("div");
+let mainimg=document.createElement("div");
+let image=document.createElement("img");
+let span=document.createElement("span");
+let text=document.createElement("div");
 
-//main div
+//creating a main div that will show us the fact on click
 mainimg.setAttribute("id","main");
 document.body.appendChild(mainimg);
-//image
+//adding the image to the main facts div
 image.setAttribute("src",link);
 mainimg.appendChild(image);
-//upper cross on the right
+//adding the 'x' to the image 
 span.setAttribute("id","x");
 span.innerHTML="X";
+//removing the picture
 span.addEventListener("click",function(){
     span.parentElement.style.opacity=0;
     setTimeout(function(){
@@ -51,21 +52,11 @@ span.addEventListener("click",function(){
 },1000)
 })
 mainimg.appendChild(span);
-
-//text
+//adding the facts to the image
 text.setAttribute("id","text");
 text.innerHTML=facts[num];
 mainimg.appendChild(text);
 
-
-
-
-//timeouts
+//fade in effect
 setTimeout(function(){text.style.opacity=1;},500)
-
-
-
 }
-
-
-//this shit is so hard man

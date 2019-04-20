@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-image: url("../background.jpg");
 }
-/*main logo about the corgies */
+/*LOGO*/
 #logo{
   position: absolute;
   left: 50%;
@@ -35,7 +35,7 @@ font-style: italic;
 
 
 
-/*main dropdown menu about the corgies */
+/*DROPDOWN MENU*/
 #dropdown{
   font-size: 2rem;
   color: white;
@@ -77,7 +77,7 @@ display: none;
 #dropdown_content a:hover{
   background-color: lightseagreen;
 }
-
+/*CONTAINER OF THE FACTS*/
 #frame {
   overflow-y: scroll;
   position: absolute;
@@ -93,6 +93,7 @@ display: none;
   grid-gap: 10px;
   counter-reset: section;
 }
+/*FACT DIV*/
 .fact {
   cursor: pointer;
   border: 1px solid black;
@@ -125,7 +126,7 @@ display: none;
   content: "FACT " counter(section) "";
   opacity: 1;
 }
-
+/*ON-CLICK IMAGE */
 #main {
   position: absolute;
   top: 50%;
@@ -163,9 +164,9 @@ display: none;
   text-shadow: 2px 2px 3px black;
   transition: 500ms;
 }
-
+/*RESPONSIVE */
 @media screen and (max-width:900px){
-  /*main logo about the corgies */
+ 
 #logo{
 position: relative;
 

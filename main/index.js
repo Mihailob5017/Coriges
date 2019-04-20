@@ -1,18 +1,17 @@
 const next=document.getElementById("right");
 const prev=document.getElementById("left");
-//deklaracije 
+//declarations
 var imgs=[];
 var string;
-var i;
-//punimo slike sa linkovima
+var i=3;
+//adding the links 
 for(var i=1;i<=21;i++){
 string="../fullscreen/";
 string=string.concat(i);
 string=string.concat(".jpg");
 imgs[i-1]=string;
 }
-//sets the default image to the current one 
-i=3;
+
 //slideshow buttons
 next.addEventListener("click",nextim);
 prev.addEventListener("click",previm);
@@ -28,9 +27,7 @@ function previm(){
     setTimeout(function(){img.setAttribute('src',imgs[i]); },1500);
     setTimeout(function(){img.style.opacity=1; },1500);
 
-    }
-
-
+            }
 //loads the next image 
 function nextim(){
 i++;
@@ -40,7 +37,6 @@ let img=document.getElementById('image');
 img.style.opacity=0;
 setTimeout(function(){img.setAttribute('src',imgs[i]); },1500);
 setTimeout(function(){img.style.opacity=1; },1500);
-
 }
 //autoloader
 setInterval(nextim,5500);

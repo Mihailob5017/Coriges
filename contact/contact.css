@@ -4,7 +4,7 @@ body{
     background-image: url('../background.jpg');
     
 }
-/*main dropdown menu about the corgies */
+/*DROPDOWN*/
 #dropdown{
     font-size: 2rem;
     color: white;
@@ -52,7 +52,7 @@ body{
 
 
 
-
+/*FRAME*/
 #frame{
     position: absolute;
     margin-top: 10%;
@@ -137,7 +137,7 @@ button:hover{
 }
 
 
-
+/*RESPONSIVE */
 @media screen and (max-width:900px){
     #frame{
         position: absolute;
@@ -148,10 +148,6 @@ button:hover{
         background-color:rgba(255, 255, 255, 0.7);
         height: 95%;
     }
-
-
-
-
     #dropdown{
         left:-9px;
         font-size: 3vw;
@@ -256,7 +252,6 @@ button:hover{
        color: red;
     }
     
-    
     #contact{
         position: absolute;
         bottom: 00%;
@@ -264,8 +259,6 @@ button:hover{
         height: 40%;
         border-top: 1.5px solid black;
     }
-    
-    
     
     #contact p{
         top: 40%;
@@ -286,22 +279,4 @@ button:hover{
         box-shadow: 3px 3px 5px black;
         
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -10,7 +10,7 @@ body{
 
 
 
-/*main logo about the corgies */
+/*  LOGO */
 #logo{
     position: absolute;
     left: 50%;
@@ -42,7 +42,7 @@ font-style: italic;
 
 
 
-/*main dropdown menu about the corgies */
+/*UPPER DROPDOWN MENU */
 #dropdown{
     font-size: 2rem;
     color: white;
@@ -92,7 +92,7 @@ font-style: italic;
 
 
 
-/*the main image container */
+/*SLIDESHOW IMAGE CONTAINER */
 #img_container{
 box-shadow: 3px 3px 5px black;
 position: absolute;
@@ -178,11 +178,11 @@ height: 35vw;
 
 
 
+/*For devices smaller than 900px */
 @media screen and (max-width:900px){
-            /*main logo about the corgies */
+/*LOGO*/
 #logo{
    position: relative;
-    
     margin-top: 5px;
     width: 100%;
     box-shadow: 2px 5px 5px black;
@@ -203,6 +203,7 @@ margin: 0;
 font-family: 'Courier New', Courier, monospace;
 font-style: italic;
 }
+/*DROPDOWN */
 #dropdown{
     left:-9px;
     font-size: 3vw;
@@ -214,9 +215,7 @@ font-style: italic;
     top: 2px;
     background-color:darkgrey;
     cursor: pointer;
-    box-shadow: 2px 2px 5px black;
-   
-    
+    box-shadow: 2px 2px 5px black;  
 }
 #dropdown #text{
    
@@ -235,7 +234,6 @@ font-style: italic;
 #dropdown #text:hover{
     background-color: lightseagreen;
 }
-
 #dropdown_content{
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -248,7 +246,6 @@ font-style: italic;
  
 }
 #dropdown_content a{
-   
     border-right: 1px solid black;
     width: 20%;
     color: white;

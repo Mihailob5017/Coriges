@@ -1,10 +1,9 @@
+//declarations
 var klik=document.getElementById("imgrid");
 var slike=klik.querySelectorAll(".grid_item > img");
 var i=0;
 var flag=0;
-for(i=0;i<slike.length;i++){
-    console.log(slike[i].getAttribute("src"));}
-
+//adding a event listenr to every picture witch will show the picture in its full  size
 for( i=0;i<slike.length;i++){
     slike[i].addEventListener('click',function(){
         document.getElementById('big_img').style.opacity=1;
@@ -17,6 +16,7 @@ for( i=0;i<slike.length;i++){
         
     });
 }
+//clicking the 'x' and exiting the big image 
 document.getElementById("x").addEventListener("click",function(){
     flag=0;
     document.getElementById('big_img').style.opacity=0;
@@ -25,15 +25,4 @@ document.getElementById("x").addEventListener("click",function(){
         document.getElementById('background').style.display="none";
         
     },700);
-})
-document.addEventListener("keypress",function(){
-    if(flag==1)
-    {
-        document.getElementById('big_img').style.opacity=0;
-        setTimeout(function(){
-            document.getElementById('big_img').style.display="none";
-            document.getElementById('background').style.display="none";
-            
-        },700);
-    }
-})
+});
